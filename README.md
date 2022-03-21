@@ -13,10 +13,10 @@ how does the scipt work ?
 2. get all acounts that I followed 
 3. find their recent tweets
 4. for every tweet, if at least one of the keywords list ("giveaway" ....) in the tweet, we consider it as giveway tweet. So we acts:
-    a. follow all twitter accounts metionned 
-    b. like the tweet
-    c. retweet 
-    d. reply/tag  
+    - follow all twitter accounts metionned 
+    - like the tweet
+    - retweet 
+    - reply/tag  
 
 userful urls:
 - https://docs.tweepy.org/en/stable/client.html
