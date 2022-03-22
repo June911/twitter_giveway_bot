@@ -16,6 +16,7 @@ def connect():
 
     # create your client
     client = tweepy.Client(
+        bearer_token=config["BEARER_TOKEN"],
         consumer_key=config["API_KEY"],
         consumer_secret=config["API_KEY_SECRET"],
         access_token=config["ACCESS_TOKEN"],
@@ -79,7 +80,7 @@ def finsh_task(client, user, max_results=5):
             # check participation criteria
             # 1. follow
             # find all users begining with @
-            users_need_to_follow = set(re.findall(r"@([a-z0-9]+)", content))
+            users_need_to_follow = set(re.findall(r"@([a-zA-Z0-9]+)", content))
             for user_name in users_need_to_follow:
                 # get user id
                 user_id = client.get_user(username=user_name, user_auth=True).data.id

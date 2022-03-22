@@ -18,6 +18,13 @@ how does the scipt work ?
     - retweet 
     - reply/tag  
 
+!!! don't give up when you don't get the expansions with API V2 client. becasue the print function would only the original strings.
+we can access the user's follower by `xx["data"]["public_metrics"][followers_count]`
+Explanation here:  https://stackoverflow.com/questions/70371657/problem-with-getting-tweet-fields-from-twitter-api-2-0-using-tweepy
+
+
 userful urls:
 - https://docs.tweepy.org/en/stable/client.html
 - https://github.com/tweepy/tweepy/tree/master/examples/API_v2
+- https://docs.tweepy.org/en/v4.4.0/faq.html#why-am-i-not-getting-expansions-or-includes-data-with-api-v2-using-client
+-
